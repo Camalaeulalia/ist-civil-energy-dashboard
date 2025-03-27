@@ -220,7 +220,7 @@ def cvrmse(y_true, y_pred):
 def run_model(n_clicks, selected_model, selected_metrics):
   return fig, metric
     if n_clicks == 0:
-        return px.line(title="Run the model to see results."), ""
+        return px.line(title="Run the model to see results."),
 
     # Features fixas (ou pode ser adaptado com dropdowns)
  # (1) Prepara os dados
