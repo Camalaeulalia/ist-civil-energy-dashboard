@@ -26,7 +26,7 @@ r2_score = 0.01
 
 # ==== Create dashboard ====
 app = Dash(__name__, suppress_callback_exceptions=True)
-
+server = app.server
 app.layout = html.Div([
     html.H1("IST Civil Building - Forecast Dashboard", className="text-center mt-4 mb-4"),
 
@@ -261,5 +261,7 @@ metrics = " | ".join(metrics_text)
 # (7) Retorna
 return fig, metrics
 
-import webbrowser
-webbrowser.open("http://127.0.0.1:8050")
+
+# ==== Run App ====
+if __name__ == '__main__':
+    app.run_server()
