@@ -233,9 +233,5 @@ def run_model(n_clicks, selected_model, selected_metrics):
     metrics = " | ".join(metrics_text)
     return fig, metrics
 
-# ==== Run App ====
-if __name__ == '__main__':
-    app.run_server(debug=True)
-
 import webbrowser
 webbrowser.open("http://127.0.0.1:8050")
