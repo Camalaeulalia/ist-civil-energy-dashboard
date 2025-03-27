@@ -218,7 +218,7 @@ def cvrmse(y_true, y_pred):
     State('metrics-selection', 'value')
 )
 def run_model(n_clicks, selected_model, selected_metrics):
-  return fig, metric
+    return fig, metric
     if n_clicks == 0:
         return px.line(title="Run the model to see results."),
 
